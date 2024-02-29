@@ -44,7 +44,7 @@ header.style.justifyContent = "center";
 div.append(header);
 //Photo of Messi
 const img = document.createElement('img');
-img.src = "https://blog.confirmbets.com/wp-content/uploads/2019/07/Messi.jpg";
+img.src = "./lionel-messi_imago1019567000h.jpg";
 img.alt = "Messi Photo";
 img.style.width = "150px";
 img.style.height = "auto";
