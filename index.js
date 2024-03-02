@@ -1,5 +1,5 @@
 //Background Color
-const body = document.getElementsByTagName('body')[0].style = 'background-color:plum';
+const body = document.getElementsByTagName('body')[0]
 //Sets nav bar
 const nav = document.createElement("div");
 nav.style.backgroundColor = "black";
@@ -63,17 +63,62 @@ footer.style.backgroundColor = "black";
 footer.style.borderRadius = "25px";
 footer.style.marginTop = "25px";
 footer.style.fontFamily = "Consolas";
+footer.style.display = "flex";
+footer.style.justifyContent = "center";
 document.body.append(footer);
 //Author
 const foot = document.createElement('p');
 foot.textContent = "Author: Daniel Freeman";
 foot.style.color = "white";
-foot.style.paddingLeft = "30%";
 footer.append(foot);
 //Email
 const email = document.createElement('a');
 email.textContent = "danielfree756@gmail.com";
 email.href = "mailto:danielfree756@gmail.com";
 email.style.color = "white";
-email.style.paddingLeft = "30%";
+email.style.paddingLeft = "30px";
+email.style.paddingRight = "30px";
 foot.append(email);
+//background changer blackk
+const button = document.createElement('button');
+button.onclick = () => {
+    body.style.background = 'black';
+    nav.style.background = 'beige';
+    home.style.color = "black";
+    gallery.style.color = "black";
+    blog.style.color = "black";
+    footer.style.background = "beige";
+    email.style.color = "black";
+    foot.style.color = "black";
+    button.style.background = "black";
+    button.style.color = "white";
+    button2.style.background = "black";
+    button2.style.color = "white";
+}
+button.style.marginRight = "10px";
+button.style.border = "2px solid";
+button.style.borderRadius = "20px";
+button.textContent = "Black";
+button.style.padding = "10px";
+footer.append(button);
+//background changer white
+const button2 = document.createElement('button');
+button2.onclick = () => {
+    body.style.background = 'white';
+    nav.style.background = 'black';
+    home.style.color = "white";
+    gallery.style.color = "white";
+    blog.style.color = "white";
+    footer.style.background = "black";
+    email.style.color = "white";
+    foot.style.color = "white";
+    button.style.background = "white";
+    button.style.color = "black";
+    button2.style.background = "white";
+    button2.style.color = "black";
+}
+button2.style.border = "2px solid";
+button2.textContent = "white";
+button2.style.padding = "10px";
+button2.style.borderRadius = "20px";
+footer.append(button2);
